@@ -1,0 +1,236 @@
+
+body {
+  margin: 0;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar {
+  background-color: rgb(251, 251, 251);
+  position: fixed;
+
+  width: 100%;
+  display: block;
+  transition: top 0.3s;
+  box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+
+#navbar a {
+  float: right;
+  display: block;
+  color: #4f4f4f;
+  text-align: center;
+  padding: 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#navbar a:hover {
+  background-color: rgb(223, 69, 69);
+  color: rgb(255, 255, 255);
+}
+
+
+
+
+
+.slideshowcontainer {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 40px;
+  padding: 150px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.dot {
+  height: 9px;
+  width: 9px;
+  margin: 0 0px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.faded {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+ 
+
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+table, th, td {
+  border: 1px  ;
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  padding: 40px 60px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+p.round3 {
+  border: 2px solid rgb(223, 69, 69);
+  border-radius: 12px;
+  padding: 30px;
+  color: #ababab;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p.round2 {
+  float: left;
+  margin-left: 100px;
+  border: 2px solid rgb(223, 69, 69);
+  border-radius: 12px;
+  padding: 10px;
+  color: #ababab;
+  width: 15%;
+
+}
+
+
+
+.footer-design {
+  width: 100%;
+  height: 40%;
+  background-color: rgb(243, 243, 243);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  box-shadow: #1e1515;
+  text-decoration: none;
+}
+
+
+.serviceBox{
+  background-color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 0 0 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px -2px rgba(0,0,0,0.2);
+}
+.serviceBox .service-content{
+  color: #fff;
+  background: linear-gradient(to right,#E54A71,rgb(223, 69, 69));
+  padding: 22px 15px;
+  margin: 0 0 20px;
+  border-radius: 18px 18px 0 0;
+}
+
+.serviceBox .title{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  text-transform: capitalize;
+  margin: 0;
+}
+.serviceBox .description{
+  color: #999;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 15px 15px;
+}
+.serviceBox .read-more{
+  color: rgb(223, 69, 69);
+  transition: all 0.3s ease 0s;
+}
+.serviceBox .read-more:hover{ color: #555; }
+.serviceBox.purple .service-content{ background: linear-gradient(to right, #E54A71,rgb(223, 69, 69)); }
+
+
+
+
+table, th, td {
+  border:0px solid black;}
+
+  .button {
+display: inline-block;
+border-radius: 4px;
+background-color: rgb(223, 69, 69)e;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+a.active {
+  background-color: rgb(232, 113, 113);
+  color: white;
+}
